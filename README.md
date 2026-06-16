@@ -86,11 +86,13 @@ The fraction a(n) / A000105(n) -- the proportion of free polyominoes with a
 saturated cell -- rises steadily but slowly: 0.08,
 0.06, 0.08, 0.10, 0.12, 0.14, 0.17, 0.19, 0.21, 0.24 for n = 5 to 14. It climbs
 much more gradually than for the triangular analogue, where a cell needs only three
-present neighbors rather than four, so interiors appear later on the square grid. We
-conjecture the proportion still tends to 1: almost every large polyomino contains a
-surrounded cell, and the shapes that avoid one -- the thin and holey shapes counted
-by c(n) -- become a vanishing minority (UNVERIFIED). The same evidence suggests a(n)
-and A000105(n) share the same exponential growth rate (UNVERIFIED).
+present neighbors rather than four, so interiors appear later on the square grid. The proportion nevertheless tends to 1.
+By Madras's pattern theorem for lattice clusters (1999), a fully surrounded cell is a
+local pattern that occurs in the interior of large polyominoes, so all but an
+exponentially small fraction of n-cell polyominoes contain at least one. Almost every
+large polyomino is therefore saturated, the shapes with no surrounded cell become a
+vanishing minority, and a(n) shares the exponential growth rate of A000105(n). The
+approach to 1 is slow, consistent with the modest value at n = 14.
 
 One fact is settled: a(n) < A000105(n) for every n, because the straight strip of n
 cells never surrounds a cell, so a shape with no saturated cell always exists.
@@ -105,6 +107,7 @@ values, which is expected for a count of this kind.
 This work was inspired by the OEIS and the community of contributors who maintain
 it.
 
+- Madras, N. (1999). "A pattern theorem for lattice clusters." Annals of Combinatorics, 3, 357-384. (arXiv:math/9902161)
 - Redelmeier, D. H. (1981). "Counting polyominoes: yet another attack." Discrete Mathematics, 36(2), 191-203.
 - Sloane, N. J. A. "A000105: Number of free polyominoes (or square animals) with n cells." The On-Line Encyclopedia of Integer Sequences. https://oeis.org/A000105
 
