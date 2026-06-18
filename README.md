@@ -42,6 +42,23 @@ c(n) = A000105(n) - a(n) = 1, 1, 2, 5, 11, 33, 99, 333, 1128, ...; these are the
 thin, tree-like, and holey shapes whose every cell keeps an exposed edge. Neither
 a(n) nor c(n) appears in the OEIS.
 
+A390515 is a related but distinct family: the free polyominoes in which every cell
+carries one specified, oriented chipped edge that cannot connect, where two chipped
+edges may meet as long as the shape stays connected through the unchipped edges. It
+is not the complement c(n). There a missing neighbor is an unmarked structural
+property of the shape; in A390515 the chipped edge is a labeled, oriented feature of
+each cell, so the two count different things.
+
+## Companion sequences
+
+The same question on the other two regular lattices gives a matching pair. A395331
+counts the polyiamonds with a saturated cell on the triangular lattice, where a cell
+has three edge-neighbors and four cells already suffice. A395552 counts the polyhexes
+on the hexagonal lattice, where a cell has six edge-neighbors, so a saturated cell
+needs seven cells and first appears later. The three sequences share one definition
+read on three lattices, and the proportion of saturated shapes rises fastest on the
+triangular lattice and slowest on the hexagonal one.
+
 ## The values
 
 **Result.** The number of free polyominoes of n cells that contain a saturated
