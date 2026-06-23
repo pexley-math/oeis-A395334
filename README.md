@@ -39,8 +39,9 @@ n = 5.
 
 The shapes with no saturated cell form the complementary count
 c(n) = A000105(n) - a(n) = 1, 1, 2, 5, 11, 33, 99, 333, 1128, ...; these are the
-thin, tree-like, and holey shapes whose every cell keeps an exposed edge. Neither
-a(n) nor c(n) appears in the OEIS.
+shapes in which every cell has at least one exposed edge -- equivalently, no cell is
+fully surrounded by its four edge-neighbors. Neither a(n) nor c(n) appears in the
+OEIS.
 
 A390515 is a related but distinct family: the free polyominoes in which every cell
 carries one specified, oriented chipped edge that cannot connect, where two chipped
